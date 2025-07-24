@@ -6,7 +6,7 @@ from utils import validate_email, validate_phone
 
 st.set_page_config(page_title="TalentScout Hiring Assistant")
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = openai(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.markdown("""
     <style>
