@@ -1,5 +1,5 @@
 import streamlit as st
-from openai import OpenAI
+import openai
 from prompts import get_questions_prompt
 from questions import generate_questions
 from utils import validate_email, validate_phone
