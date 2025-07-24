@@ -1,12 +1,12 @@
 import streamlit as st
-import openai
+from openai import OpenAI
 from prompts import get_questions_prompt
 from questions import generate_questions
 from utils import validate_email, validate_phone
 
 st.set_page_config(page_title="TalentScout Hiring Assistant")
 
-client = openai(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.markdown("""
     <style>
