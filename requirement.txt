@@ -1,4 +1,5 @@
-openai
 streamlit
+openai
+pillow
 python-dotenv
-Pillow
+
